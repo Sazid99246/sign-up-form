@@ -1,0 +1,50 @@
+:root {
+    --button-bg-primary: #596D48;
+    --input-border: #E5E7EB;
+    --odin-bg: rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+div.left {
+    background: url(images/form-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-bar {
+    background-color: var(--odin-bg); /* Which you defined as rgba(0, 0, 0, 0.5) */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    padding: 20px 0;
+}
+
+h1 {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 4rem;
+}
+
+img {
+    background-color: black;
+    height: 1em;
+}
