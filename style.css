@@ -1,9 +1,3 @@
-:root {
-    --button-bg-primary: #596D48;
-    --input-border: #E5E7EB;
-    --odin-bg: rgba(0, 0, 0, 0.5);
-}
-
 @font-face {
     font-family: Norse-Bold;
     src: url(./fonts/Norse-Bold.otf);
@@ -18,6 +12,7 @@
 body {
     display: grid;
     grid-template-columns: 4fr 8fr;
+    font-family: sans-serif;
 }
 
 div.left {
@@ -29,7 +24,7 @@ div.left {
 }
 
 .logo-bar {
-    background-color: var(--odin-bg); /* Which you defined as rgba(0, 0, 0, 0.5) */
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     display: flex;
     align-items: center;
@@ -45,6 +40,75 @@ h1 {
 }
 
 img {
-    background-color: black;
+    background-color: transparent;
     height: 1em;
+}
+
+div.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 120px 0 60px;
+    font-size: 16px;
+    line-height: 1rem;
+}
+
+div.right p:nth-child(2) {
+    margin-top: 20px;
+}
+
+.form-container {
+    margin-top: 40px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.name,
+.contact,
+.password {
+    display: flex;
+    gap: 30px;
+}
+
+.name > div, .contact > div, .password > div {
+    flex: 1;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    height: 40px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 180px;
+    padding: 10px 20px;
+}
+
+input, button {
+    border-radius: 5px;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+p:last-of-type {
+    margin-top: 20px;
 }
